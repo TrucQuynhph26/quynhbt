@@ -1,0 +1,71 @@
+.container-fluid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    height: 350px;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    background-image: url("/images/7.jpeg");
+}
+
+#scroll {
+    overflow: scroll;
+    height: 640px;
+}
+
+.nav-background {
+    background-image: url("/images/7.jpeg");
+    background-size: cover;
+    min-height: 50px;
+}
+
+#white {
+    margin-left: 20px;
+    color: white;
+}
+
+#bot {
+    margin-bottom: 80px;
+}
+
+#anh {
+    width: 200px;
+    height: 300px;
+}
+
+p {
+    text-align: justify;
+}
+
+#icon {
+    margin-bottom: 10px;
+}
+
+#board {
+    background-image: url("https://live.staticflickr.com/5301/5646903573_f2fe54a853_b.jpg");
+    color: black;
+}
+
+#cfs {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#thank {
+    background-image: url("/images/rg.png");
+    color: white;
+}
+
+#cont {
+    background-image: url("https://i.etsystatic.com/6276538/r/il/dae63d/595315532/il_570xN.595315532_j899.jpg");
+    color: white;
+}
+
+#navbarDropdown {
+    color: white;
+}

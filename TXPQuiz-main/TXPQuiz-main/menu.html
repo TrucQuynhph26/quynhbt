@@ -1,0 +1,40 @@
+<div class="row">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-background">
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto font-weight-bold">
+        <li class="nav-item">
+          <a class="nav-link" href="#!view/home" id="white"><i class="fas fa-house-damage"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!view/about" id="white"><i class="fas fa-th-list"></i>About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#!view/contact" id="white"><i class="fas fa-address-card"></i>Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!view/feedback" id="white"><i class="fas fa-comments"></i>Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!view/faq" id="white"><i class="fas fa-question-circle"></i>FAQ</a>
+        </li>
+        <li class="nav-item dropdown mr-5">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i> {{checkLogin}}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="register.html" ng-show="checkLogin1==0">Sign Up</a>
+            <a class="dropdown-item" href="login.html" ng-show="checkLogin1==0">Sign In</a>
+            <a class="dropdown-item" href="forgotpass.html" ng-show="checkLogin1==0">Forget Password</a>
+            <div class="dropdown-divider" ng-show="checkLogin1==0"></div>
+            <a class="dropdown-item" href="#!view/updateinfo" ng-hide="checkLogin1==0">Account Setting</a>
+            <a class="dropdown-item" href="#!view/changepass" ng-hide="checkLogin1==0">Change Password</a>
+            <a class="dropdown-item" href="" ng-click="logout()" ng-hide="checkLogin1==0">Sign Out</a>
+            <a href="#!view/admin" class="dropdown-item" ng-hide="checkRole==1">Admin</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
